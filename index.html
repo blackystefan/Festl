@@ -100,7 +100,7 @@ button {
     letter-spacing:1px;
     text-transform:uppercase;
   ">
-    Short Reminder ✨ (wie wir Officemenschen so sagen😂)
+    Follow Up oder Short Reminder ✨ (wie wir Officemenschen so sagen😂)
   </div>
 
   <h1 style="
@@ -121,7 +121,7 @@ button {
     line-height:1.5;
   ">
     Möchtest du jetzt mit aufs<br>
-    Krones Fest kommen? 🎡
+    Krones Fest kommen? 🎡🎉
   </div>
 
   <div style="
@@ -132,8 +132,8 @@ button {
     line-height:1.5;
   ">
     Normale Leute schicken eine WhatsApp.<br>
-    <br>Ich hab halt eine App für dich gebaut - kein großes Ding! 😂<br>
-    <br>Am PC funktionierts am besten, beim Handy musst bitte immer ganz nach unten scrollen - da gibts no versteckte  Infos!😁 <br>
+    <br>Des kann ja jeder, ich hab halt eine App für dich gebaut - kein großes Ding! 😂<br>
+    Info: Bitte immer ganz nach unten scrollen - da gibts no versteckte  Infos!😁 <br>
     
   </div>
 
@@ -177,7 +177,7 @@ button {
 
 </div>
 
-  <h2>Wie machen wirs? 🙂</h2>
+  <h2>Wie machen wirs?🙂</h2>
 
   <button class="choiceBtn" onclick="pickup()">
     Hier Abholservice Schwarz buchen 🚗
@@ -191,7 +191,7 @@ button {
 
 <div id="phase3" style="max-width:700px;margin:auto;">
   <h2>Noch eine wichtige Frage:</h2>
-  <p>Wie gehst du aufs Krones Fest?😬 </p>
+  <p>Wie gehst du aufs Krones Fest? :) </p>
 
   <button class="choiceBtn" onclick="outfitChosen('tracht')">In Tracht 👗</button>
   <button class="choiceBtn" onclick="outfitChosen('leger')">Eher leger 😎</button>
@@ -209,6 +209,15 @@ button {
   <div id="decisionButtons">
   <button id="btnStay" onclick="goBack()">Nein👉👈</button>
   <button id="runawayBtn">Ja</button>
+    <div style="
+        margin-top:25px;
+        color:#666;
+        font-style:italic;
+        font-size:18px;
+        line-height:1.5;
+      ">
+        PS: Alternativvorschlag: Hab noch 2 Karten fürs Tream Open Air im Jahnstadion oder Guggi Strandbar mit Shisha rauchen 👉👈<br>
+      </div>
 </div>
 </div>
 
@@ -342,7 +351,7 @@ function updateEmotion() {
   } else if (escapeCount === 4) {
     runawayBtn.innerText = "Absolut sicher?";
   } else {
-    runawayBtn.innerText = "Ha! Zu langsam!😬 ";
+    runawayBtn.innerText = "Ha! Zu langsam! ";
   }
 
   if (escapeCount >= 3) {
@@ -438,7 +447,7 @@ function finish(type, outfit) {
         font-size:18px;
         line-height:1.5;
       ">
-        PS: Hab noch 2 Karten fürs Tream Open Air im Jahnstadion übrig 👉👈<br>
+        PS: Alternativvorschlag: Hab noch 2 Karten fürs Tream Open Air im Jahnstadion oder Guggi Strandbar mit Shisha rauchen 👉👈<br>
       </div>
 
     </div>
