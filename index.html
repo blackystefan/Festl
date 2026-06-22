@@ -66,22 +66,22 @@
 
 <body>
 
-<h1>Hey Karo, möchtest du mit mir aufs Krones Fest gehen? 🎡</h1>
+<h1>Hey Karo 🙂, möchtest du jetzt mit aufs Krones Fest kommen? 🎡</h1>
 
-<button id="btnYes" onclick="yesClick()">Ja</button>
-<button id="btnNo" onclick="noClick()">Nein</button>
+<button id="btnYes" onclick="yesClick()">Ja👍🏻</button>
+<button id="btnNo" onclick="noClick()">Nein👎🏻</button>
 
 <!-- PHASE 2 JA -->
 <div id="phase2_yes">
-  <h2>Wie wollen wir es machen? 🙂</h2>
+  <h2>Super! Freut mich, dass du ja gesagt hast 😂 Wie wollen wir es machen? 🙂</h2>
 
-  <button class="choiceBtn" onclick="pickup()">Ich hole dich ab 🚗</button>
+  <button class="choiceBtn" onclick="pickup()">Hier Abholservice Schwarz buchen 🚗</button>
   <button class="choiceBtn" onclick="meet()">Wir treffen uns dort 🎡</button>
 </div>
 
 <!-- PHASE 2 NEIN -->
 <div id="phase2_no">
-  <h2>Bist du dir sicher? 🤔</h2>
+  <h2>Bist du dir sicher?</h2>
 
   <img
     id="sadHamster"
@@ -198,7 +198,7 @@ function escape() {
 function updateEmotion() {
 
   if (escapeCount === 1) {
-    runawayBtn.innerText = "Stop! 🛑";
+    runawayBtn.innerText = "Stop!";
   }
 
   else if (escapeCount === 2) {
@@ -209,8 +209,12 @@ function updateEmotion() {
     runawayBtn.innerText = "Wirklich?";
   }
 
+    else if (escapeCount === 4) {
+    runawayBtn.innerText = "Bist du dir ganz sicher?";
+  }
+
   else {
-    runawayBtn.innerText = "Überlegs dir, bitte";
+    runawayBtn.innerText = "Haha! Du wirst diesen Button niemals erwischen!";
   }
 
   if (escapeCount >= 3) {
@@ -232,9 +236,9 @@ function finish(type) {
 
   document.body.innerHTML = `
     <div style="font-family:Arial; text-align:center; margin-top:100px;">
-      <h1>Perfekt 🙂</h1>
+      <h1>Super! Freut mich, dass du ja gesagt hast 😂 Wie wollen wir es machen?🙂</h1>
 
-      <p>Karo, wie wollen wir schreiben?</p>
+      <p>Wollen wir alle Details in WhatsApp klären?🙂</p>
 
       <button onclick="openWhatsApp('${type}')"
         style="
@@ -260,8 +264,8 @@ function openWhatsApp(type) {
 
   const text =
     type === "pickup"
-      ? "Hey Karo 🙂 ich hole dich fürs Krones Fest ab 🚗"
-      : "Hey Karo 🙂 wir treffen uns direkt beim Krones Fest 🎡";
+      ? "Hey 🙂 bitte hole mich fürs Krones Fest ab 🚗"
+      : "Hey, wir treffen uns direkt beim Krones Fest🎡";
 
   window.location.href =
     `https://wa.me/${number}?text=${encodeURIComponent(text)}`;
